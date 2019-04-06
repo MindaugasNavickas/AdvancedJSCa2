@@ -1,0 +1,48 @@
+body{
+  background: #ededed;
+  padding-left: 90px;
+  padding-top: 20px;
+}
+.sidePanel{
+  padding-left: 20px;
+  background: #ffffff;
+  max-height: 700px;
+  margin-top: 20px;
+}
+
+.mainBody{
+  /* margin-left: 20px; */
+  margin-top: 8px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card{
+  margin-bottom: 25px;
+  max-width: 1000px;
+}
+.divPos{
+  margin-bottom: 20px;
+}
+.navBar2{
+  max-width: 1288px;
+}
+img{
+  width:280px;
+  height:200px;
+}
+.showLogin{
+  visibility: hidden;
+}
+
+.afterLogin{
+  visibility: hidden;
+}
+
+.disabledCursor {
+  background-color: #ffffff;
+  cursor: default;
+}
+.mainInsertBody{
+  margin: auto;
+}
