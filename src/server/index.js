@@ -18,12 +18,11 @@ const secret = 'secret_should_not_be_in_git';
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(cookieParser());
-const mongo_uri = 'mongodb+srv://Minde:Mindziukas1234@reactca2-gwl3h.mongodb.net/ReactCA2?retryWrites=true';
-mongoose.connect(mongo_uri, { useNewUrlParser: true }, function(err) {
+mongoose.connect(process.env.MONGODB_URL, { useNewUrlParser: true }, function(err) {
   if (err) {
     throw err;
   } else {
-    console.log(`Successfully connected to ${mongo_uri}`);
+    console.log(`Successfully connected to ${process.env.MONGODB_URL}`);
   }
 });
 
@@ -161,7 +160,7 @@ app.post('/api/authenticate', function(req, res) {
     }
   });
 });
- 
+
 app.get('/api/checkToken', withAuth, function(req, res) {
   res.sendStatus(200);
 });
