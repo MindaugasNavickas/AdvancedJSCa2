@@ -186,7 +186,7 @@ class VehicleList extends Component {
                     Add Vehicle
                   </Link>
                 ) : (
-                  <a className="navbar-item disabledCursor">Add Vehiclesss</a>
+                  <a className="navbar-item disabledCursor">Add Vehicles</a>
                 )}
             </div>
 
