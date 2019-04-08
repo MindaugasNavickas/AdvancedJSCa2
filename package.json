@@ -1,6 +1,9 @@
 {
   "name": "mnindaugas-navickas-advancedJS-ca2",
   "version": "1.0.0",
+  "engines": {
+    "node": "11.1.0"
+  },
   "description": "Demo Full Stack MongoDB, Express, React & Node",
   "main": "src/server/index.js",
   "scripts": {
