@@ -169,3 +169,12 @@ app.get('/api/logout', withAuth, function(req, res) {
 });
 
 app.listen(process.env.PORT || 8080);
+
+
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static('client/build'));
+  // For Production
+  app.get('*', (req, res) => {
+    res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
+  });
+}
