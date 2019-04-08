@@ -161,7 +161,7 @@ app.post('/api/authenticate', function(req, res) {
     }
   });
 });
-
+ 
 app.get('/api/checkToken', withAuth, function(req, res) {
   res.sendStatus(200);
 });
