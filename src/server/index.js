@@ -58,6 +58,7 @@ app.delete('/api/vehicles', (req, res) => {
   });
 });
 
+
 app.post('/api/vehicles', (req, res) => {
   console.log(req.body);
   const{ make, model, year, engineSize, fuelType, price, description, picture, userId } = req.body;

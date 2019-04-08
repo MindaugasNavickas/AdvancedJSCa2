@@ -68,9 +68,7 @@ class VehicleList extends Component {
         if (res.status === 200) {
           // redirect to /
           // this.setState({userId: this.props.history.state._id});
-          console.log(this.state.userId);
           this.props.history.push("/");
-          console.log(res.data);
           this.props.history.state = res.data;
           withAuth(this.setState(state => ({
             loggedIn: true,
