@@ -25,7 +25,7 @@ mongoose.connect(process.env.MONGODB_URL, { useNewUrlParser: true }, function(er
     console.log(`Successfully connected to ${process.env.MONGODB_URL}`);
   }
 });
- 
+
 // app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static('dist'));
 
